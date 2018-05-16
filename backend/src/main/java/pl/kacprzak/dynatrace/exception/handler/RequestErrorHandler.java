@@ -9,10 +9,7 @@ import java.io.IOException;
 public class RequestErrorHandler implements ResponseErrorHandler {
     @Override
     public boolean hasError(ClientHttpResponse response) throws IOException {
-        if(response.getRawStatusCode()>=400)
-            return true;
-
-        return false;
+        return response.getRawStatusCode()>=400;
     }
 
     @Override
