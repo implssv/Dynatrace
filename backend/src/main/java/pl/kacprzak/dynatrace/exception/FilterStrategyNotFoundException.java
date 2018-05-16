@@ -8,10 +8,4 @@ import java.io.IOException;
 @ResponseStatus(value = HttpStatus.NOT_FOUND, reason = "Strategy is not found")
 public class FilterStrategyNotFoundException extends IOException {
 
-    public FilterStrategyNotFoundException()
-    {
-        super();
-    }
-
-
 }
